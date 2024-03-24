@@ -1,15 +1,10 @@
-const repeatString = function(string, timesToRepeat) {
+const repeatString = function(string, num) {
 
-  let repeatedString = "";
+  return (num > 0) ? string.repeat(num)
+                   : (num === 0)
+                   ? ''
+                   : 'ERROR';
 
-  if (timesToRepeat < 0) return 'ERROR';
-
-  for (let i = 1; i <= timesToRepeat; i++) {
-
-    repeatedString += string;
-  }
-
-  return repeatedString;
 };
 
 // Do not edit below this line
