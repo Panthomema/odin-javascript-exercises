@@ -6,5 +6,5 @@ const getAge = function(person) {
   return (person.yearOfDeath || new Date().getFullYear()) - person.yearOfBirth;
 }
 
-// Do not edit below this line
+// Do not edit below this line 
 module.exports = findTheOldest;
